@@ -1,0 +1,14 @@
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $max-width;
+    height: 100vh;
+    overflow-y: hidden;
+  
+    background-color: $color-main;
+    margin: 0 auto;
+  }
+ 

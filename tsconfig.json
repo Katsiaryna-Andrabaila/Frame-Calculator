@@ -9,5 +9,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true
   },
+  "include": ["src/**/*"],
   "files": ["src/app.ts"]
 }
