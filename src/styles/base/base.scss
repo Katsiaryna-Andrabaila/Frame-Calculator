@@ -6,7 +6,7 @@ body {
     align-items: center;
     max-width: $max-width;
     height: 100vh;
-    overflow-y: hidden;
+    overflow-y: auto;
   
     background-color: $color-main;
     margin: 0 auto;
