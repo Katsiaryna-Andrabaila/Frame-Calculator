@@ -5,6 +5,7 @@ import setFixRequired from './setFixRequired';
 import state from '../state/state';
 import UI from '../constants/constants';
 import setTotalSum from './setTotalSum';
+import drawTable from '../layouts/drawTable';
 
 const calculate = (event: Event) => {
   state.pipesRequired.length = 0;
@@ -37,6 +38,7 @@ const calculate = (event: Event) => {
     setPipesRequired();
     setFixRequired();
     setTotalSum();
+    drawTable();
   }
 };
 

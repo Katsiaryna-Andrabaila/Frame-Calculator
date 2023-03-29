@@ -55,7 +55,9 @@ const drawCalculatorPage = () => {
         <button class="button calculate-button">${UI.calculateBtn}</button>
       </section>
       <section class="result">
-        <table class="table"></table>
+        <div class="result-table">
+          <table class="table"></table>
+        </div>
         <div class="cart"></div>
       </section>
     </div>
