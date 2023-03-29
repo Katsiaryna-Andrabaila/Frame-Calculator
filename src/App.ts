@@ -2,9 +2,9 @@ import './styles/style.scss';
 import drawCalculatorPage from './pages/drawCalculatorPage';
 import addFunctionality from './features/addFunctionality';
 
-const App = () => {
+const app = () => {
   document.body.innerHTML = drawCalculatorPage();
   addFunctionality();
 };
 
-App();
+app();
