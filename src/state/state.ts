@@ -1,4 +1,6 @@
-const state = {
+import { State } from '../types/types';
+
+const state: State = {
   materialId: '',
   selectedMaterial: {
     id: 0,
@@ -12,7 +14,18 @@ const state = {
   },
   selectedWidth: '',
   selectedLength: '',
-  selectedStrength: '',
+  selectedStrength: {
+    type: '',
+    key: '',
+    name: '',
+    step: 0,
+  },
+  leavesRequired: 0,
+  pipesRequired: [],
+  frameSquare: 0,
+  ceilSize: '',
+  fixRequired: 0,
+  priceTotal: '',
 };
 
 export default state;

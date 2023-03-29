@@ -9,10 +9,34 @@ export type MaterialCard = {
   image: string;
 };
 
+export type Strength = {
+  type: string;
+  key: string;
+  name: string;
+  step: number;
+};
+
+export type Pipe = Omit<MaterialCard, 'material' | 'image'>;
+
+export type Fix = Omit<Pipe, 'width'>;
+
+export type FixConfig = {
+  type: string;
+  key: string;
+  name: string;
+  value: number;
+};
+
 export type State = {
   materialId: string;
   selectedMaterial: MaterialCard;
-  width: string;
-  length: string;
-  strength: string;
+  selectedWidth: string;
+  selectedLength: string;
+  selectedStrength: Strength;
+  leavesRequired: number;
+  pipesRequired: Array<[Pipe, number]>;
+  frameSquare: number;
+  ceilSize: string;
+  fixRequired: number;
+  priceTotal: string;
 };

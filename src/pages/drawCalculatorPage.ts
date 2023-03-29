@@ -52,7 +52,7 @@ const drawCalculatorPage = () => {
             )
             .join('')}
         </div>
-        <button class="button calculate-button">${UI.calcilateBtn}</button>
+        <button class="button calculate-button">${UI.calculateBtn}</button>
       </section>
       <section class="result">
         <table class="table"></table>
