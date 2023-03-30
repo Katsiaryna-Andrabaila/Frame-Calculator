@@ -9,7 +9,7 @@ const drawCalculatorPage = () => {
   return `
   <main class="main">
     <h1>${UI.pageHeader}</h1>
-    <div class="wrapper">
+    <div class="calculator-wrapper">
       <section class="calculator">
         <div class="material">
           <button class="button material-button">${UI.chooseMaterialBtn}</button>
@@ -56,11 +56,15 @@ const drawCalculatorPage = () => {
       </section>
       <section class="result">
         <div class="result-table">
+          <h3>${UI.resultHeader}</h3>
           <table class="table"></table>
         </div>
-        <div class="cart"></div>
       </section>
     </div>
+    <div class="cart hidden">
+      <h3>${UI.cartHeader}</h3>
+    </div>
+    
   </main>
 `;
 };

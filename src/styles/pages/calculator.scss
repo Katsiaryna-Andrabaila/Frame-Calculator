@@ -1,13 +1,14 @@
 .main {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   width: 100%;
   padding: 2rem;
 }
 
-.wrapper {
+.calculator-wrapper {
   display: flex;
+  gap: 5rem;
 
   width: 100%;
 }

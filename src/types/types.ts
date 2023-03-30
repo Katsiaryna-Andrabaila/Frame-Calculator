@@ -39,4 +39,5 @@ export type State = {
   ceilSize: string;
   fixRequired: number;
   priceTotal: string;
+  cartItems: string[];
 };

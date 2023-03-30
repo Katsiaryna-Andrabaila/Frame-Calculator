@@ -1,0 +1,12 @@
+.table {
+  table-layout: fixed;
+
+  border-collapse: collapse;
+  border: 2px solid #000000;
+
+  text-align: right;
+}
+
+.info-row {
+  background-color: $color-additional;
+}

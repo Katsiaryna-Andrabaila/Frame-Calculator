@@ -8,15 +8,18 @@ const UI = {
   materialError: 'Please, choose cover material',
   strengthError: 'Please, choose frame strength',
   complexError: 'Please, choose cover material and frame strength',
-  resultHeader: 'Result',
+  resultHeader: 'Selected frame result',
   frameSquare: 'Frame square: ',
-  ceilSize: 'Estimated cell size: ',
+  ceilSize: 'Cell size: ',
   tableHeader: 'Materials required',
   tableMainColumn: 'Name',
   tableItems: 'Unit',
   tableQuantity: 'Quantity',
   tableSum: 'Sum',
-  totalSum: 'Total sum: ',
+  totalSum: 'Sum: ',
+  addBtn: 'Add to cart',
+  cartHeader: 'Your cart',
+  cartSum: 'Total sum: ',
 };
 
 export default UI;

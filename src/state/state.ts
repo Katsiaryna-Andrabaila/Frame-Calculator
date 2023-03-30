@@ -26,6 +26,7 @@ const state: State = {
   ceilSize: '',
   fixRequired: 0,
   priceTotal: '',
+  cartItems: [],
 };
 
 export default state;
