@@ -40,4 +40,5 @@ export type State = {
   fixRequired: number;
   priceTotal: string;
   cartItems: string[];
+  filter: string;
 };

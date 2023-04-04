@@ -27,6 +27,7 @@ const state: State = {
   fixRequired: 0,
   priceTotal: '',
   cartItems: [],
+  filter: '',
 };
 
 export default state;

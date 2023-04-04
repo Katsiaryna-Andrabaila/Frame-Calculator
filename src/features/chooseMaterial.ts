@@ -2,6 +2,8 @@ import state from '../state/state';
 import data from '../data/data.json';
 
 const chooseMaterial = (event: Event) => {
+  document.querySelector('.selected-material')?.remove();
+
   const materialArray = data.filter((item) => item.type === 'list');
 
   const { currentTarget } = event;

@@ -1,9 +1,11 @@
 import data from '../data/data.json';
+import state from '../state/state';
 
 const drawMaterialCards = (): string => {
-  const materialArray = data.filter((item) => item.type === 'list');
+  const materialArray = !state.filter
+    ? data.filter((item) => item.type === 'list')
+    : data.filter((item) => item.type === 'list' && item.material === state.filter);
   return `
-  <div class="cards-wrapper">
     ${materialArray
       .map(
         (item) =>
@@ -16,7 +18,6 @@ const drawMaterialCards = (): string => {
         </div>`
       )
       .join('')}
-  </div>
   `;
 };
 

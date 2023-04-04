@@ -1,6 +1,8 @@
-import drawMaterialCards from './drawMaterialCard';
+import drawMaterialCards from '../layouts/drawMaterialCard';
 import togglePopup from './togglePopup';
 import chooseMaterial from './chooseMaterial';
+import filterMaterials from './filterMaterials';
+import state from '../state/state';
 
 const openMaterialPopup = () => {
   document.querySelector('.shadow')?.remove();
@@ -22,9 +24,23 @@ const openMaterialPopup = () => {
   close.src = '../assets/icons/close.svg';
   close.addEventListener('click', togglePopup);
 
-  popup.append(close);
+  const plasticBtn = document.createElement('button');
+  plasticBtn.classList.add('button', 'plastic-button');
+  plasticBtn.textContent = 'PLASTIC';
+  plasticBtn.disabled = state.filter === 'plastic';
 
-  popup.innerHTML = drawMaterialCards();
+  const metalBtn = document.createElement('button');
+  metalBtn.classList.add('button', 'metal-button');
+  metalBtn.textContent = 'METAL';
+  metalBtn.disabled = state.filter === 'metal';
+
+  const cardsWrapper = document.createElement('div');
+  cardsWrapper.classList.add('cards-wrapper');
+  cardsWrapper.innerHTML = drawMaterialCards();
+
+  popup.append(close, plasticBtn, metalBtn, cardsWrapper);
+  plasticBtn.addEventListener('click', (event) => filterMaterials(event, 'plastic'));
+  metalBtn.addEventListener('click', (event) => filterMaterials(event, 'metal'));
 
   const cards = document.querySelectorAll('.material-card');
   cards.forEach((item) => item.addEventListener('click', togglePopup));
