@@ -19,12 +19,7 @@
   "dependencies": {
     "@jridgewell/sourcemap-codec": "^1.4.14",
     "@npmcli/fs": "^3.1.0",
-    "datejs": "^1.0.0-rc3",
-    "i18next": "^22.4.10",
-    "sortablejs": "^1.15.0",
-    "spin.js": "^4.1.1",
     "style-loader": "^3.3.1",
-    "toastr": "^2.1.4",
     "workbox-webpack-plugin": "^6.5.4"
   },
   "devDependencies": {
