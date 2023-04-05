@@ -33,6 +33,7 @@ const calculate = (event: Event) => {
       return;
     }
 
+    document.querySelector('.result-header')?.classList.remove('hidden');
     setFrameSquare();
     setLeavesRequired();
     setPipesRequired();

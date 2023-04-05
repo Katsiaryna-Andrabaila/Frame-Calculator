@@ -2,14 +2,16 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+
   max-width: $max-width;
   height: 100vh;
   overflow-y: auto;
+  margin: 0 auto;
 
   background-color: $color-main;
-  margin: 0 auto;
+
+  color: $text-color;
 }
 
 .hidden {

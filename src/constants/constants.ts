@@ -4,7 +4,7 @@ const UI = {
   chooseWidth: 'Choose width',
   chooseLength: 'Choose length',
   chooseStrength: 'Choose strength',
-  calculateBtn: 'Calculate',
+  calculateBtn: 'CALCULATE',
   materialError: 'Please, choose cover material',
   strengthError: 'Please, choose frame strength',
   complexError: 'Please, choose cover material and frame strength',
@@ -17,8 +17,8 @@ const UI = {
   tableQuantity: 'Quantity',
   tableSum: 'Sum',
   totalSum: 'Sum: ',
-  addBtn: 'Add to cart',
-  cartHeader: 'Your cart',
+  addBtn: 'ADD TO CART',
+  cartHeader: 'CART',
   cartSum: 'Total sum: ',
 };
 

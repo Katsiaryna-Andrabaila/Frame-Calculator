@@ -1,12 +1,26 @@
+.result-table {
+  width: 100%;
+}
+
 .table {
   table-layout: fixed;
 
-  border-collapse: collapse;
-  border: 2px solid #000000;
+  border-collapse: separate;
+  border: 2px solid $text-color;
 
   text-align: right;
 }
 
 .info-row {
   background-color: $color-additional;
+}
+
+tr {
+  border: 1px solid $text-color;
+}
+
+td,
+th {
+  border: 1px solid $text-color;
+  padding: 0 0.5rem;
 }

@@ -24,6 +24,9 @@ const openMaterialPopup = () => {
   close.src = '../assets/icons/close.svg';
   close.addEventListener('click', togglePopup);
 
+  const buttonWrapper = document.createElement('div');
+  buttonWrapper.classList.add('popup-button-wrapper');
+
   const plasticBtn = document.createElement('button');
   plasticBtn.classList.add('button', 'plastic-button');
   plasticBtn.textContent = 'PLASTIC';
@@ -38,7 +41,8 @@ const openMaterialPopup = () => {
   cardsWrapper.classList.add('cards-wrapper');
   cardsWrapper.innerHTML = drawMaterialCards();
 
-  popup.append(close, plasticBtn, metalBtn, cardsWrapper);
+  buttonWrapper.append(plasticBtn, metalBtn);
+  popup.append(close, buttonWrapper, cardsWrapper);
   plasticBtn.addEventListener('click', (event) => filterMaterials(event, 'plastic'));
   metalBtn.addEventListener('click', (event) => filterMaterials(event, 'metal'));
 
