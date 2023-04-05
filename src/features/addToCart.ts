@@ -19,6 +19,7 @@ const addToCart = (node: Node, price: string) => {
   const prevSum = document.querySelector('.cart-sum');
   prevSum?.replaceWith(cartSum);
 
+  document.querySelector('.cart')?.classList.remove('hidden');
   document.querySelector('.cart-header')?.classList.remove('hidden');
 };
 

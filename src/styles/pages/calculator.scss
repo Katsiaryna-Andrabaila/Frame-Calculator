@@ -8,10 +8,12 @@
 }
 
 .calculator-wrapper {
+  position: relative;
   display: flex;
   gap: 2rem;
 
   width: 100%;
+  min-height: 91vh;
 }
 
 .selected-material {
@@ -25,10 +27,20 @@
   border-radius: 0.5rem;
 }
 
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 35%;
+
+  border-right: none;
+  box-shadow: inset 0 0 0.3rem $color-main, 0 0 0.9rem $text-color;
+}
+
 .calculator {
   width: 40%;
-  padding-right: 2rem;
+  padding: 2rem;
   border-right: 2px solid $color-additional;
+  transition: all 1s;
 }
 
 .option {
@@ -38,7 +50,7 @@
 
   min-width: 29rem;
   border-radius: 0.5rem;
-  margin: 1rem 1rem 1rem 0;
+  margin: 1rem 0;
   padding: 1rem;
 
   background-color: $color-additional;

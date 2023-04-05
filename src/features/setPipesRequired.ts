@@ -21,7 +21,6 @@ const setPipesRequired = () => {
     const pipesRequired = lengthPipesRequired + widthPipesRequired;
     state.pipesRequired.push([item, pipesRequired]);
     state.ceilSize = `${ceilLength.toFixed(2)}x${ceilWidth.toFixed(2)}м`;
-    console.log(lengthPipesUnits, widthPipesUnits, state.ceilSize);
   });
 };
 

@@ -10,6 +10,7 @@ const drawTable = () => {
   const table = document.querySelector('.table');
   const fixItem = <Fix>data.find((item) => item.type === 'fix');
   if (table instanceof HTMLTableElement) {
+    table.classList.remove('hidden');
     table.innerHTML = `
       <tr>
         <td colspan="4" class="info-row">${UI.frameSquare}${state.frameSquare} м2</td>

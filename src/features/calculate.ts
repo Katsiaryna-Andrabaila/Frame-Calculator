@@ -34,6 +34,7 @@ const calculate = (event: Event) => {
     }
 
     document.querySelector('.result-header')?.classList.remove('hidden');
+    document.querySelector('.calculator')?.classList.remove('absolute');
     setFrameSquare();
     setLeavesRequired();
     setPipesRequired();

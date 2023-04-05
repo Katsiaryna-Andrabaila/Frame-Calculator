@@ -14,7 +14,6 @@ const setTotalSum = () => {
   const fixSum = fixItem.price * state.fixRequired;
 
   state.priceTotal = pipeSum.map((item) => `${leavesSum + item + fixSum}`).join(' / ');
-  console.log(state.priceTotal);
 };
 
 export default setTotalSum;
