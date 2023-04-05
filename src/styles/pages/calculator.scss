@@ -14,6 +14,11 @@
 
   width: 100%;
   min-height: 91vh;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .selected-material {
@@ -41,6 +46,11 @@
   padding: 2rem;
   border-right: 2px solid $color-additional;
   transition: all 1s;
+
+  @include mobile {
+    width: 90%;
+    border-right: none;
+  }
 }
 
 .option {
@@ -48,7 +58,6 @@
   flex-direction: column;
   align-items: center;
 
-  min-width: 29rem;
   border-radius: 0.5rem;
   margin: 1rem 0;
   padding: 1rem;

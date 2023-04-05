@@ -45,7 +45,11 @@
 
 .radio-wrapper {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
+
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 .radio-label {

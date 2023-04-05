@@ -17,7 +17,7 @@ const UI = {
   tableQuantity: 'Quantity',
   tableSum: 'Sum',
   totalSum: 'Sum: ',
-  addBtn: 'ADD TO CART',
+  addBtn: 'ADD TO CART (see below)',
   cartHeader: 'CART',
   cartSum: 'Total sum: ',
 };
