@@ -1,0 +1,25 @@
+const UI = {
+  pageHeader: 'Frame calculator',
+  chooseMaterialBtn: 'Choose material',
+  chooseWidth: 'Choose width',
+  chooseLength: 'Choose length',
+  chooseStrength: 'Choose strength',
+  calculateBtn: 'CALCULATE',
+  materialError: 'Please, choose cover material',
+  strengthError: 'Please, choose frame strength',
+  complexError: 'Please, choose cover material and frame strength',
+  resultHeader: 'Selected frame result',
+  frameSquare: 'Frame square: ',
+  ceilSize: 'Cell size: ',
+  tableHeader: 'Materials required',
+  tableMainColumn: 'Name',
+  tableItems: 'Unit',
+  tableQuantity: 'Quantity',
+  tableSum: 'Sum',
+  totalSum: 'Sum: ',
+  addBtn: 'ADD TO CART (see below)',
+  cartHeader: 'CART',
+  cartSum: 'Total sum: ',
+};
+
+export default UI;

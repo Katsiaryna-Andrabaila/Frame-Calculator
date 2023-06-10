@@ -1,0 +1,84 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.calculator-wrapper {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+
+  width: 100%;
+  min-height: 91vh;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.selected-material {
+  display: flex;
+  align-items: flex-end;
+}
+
+.selected-image {
+  width: 7rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 30%;
+
+  border-right: none;
+  box-shadow: inset 0 0 0.3rem $color-main, 0 0 0.9rem $text-color;
+}
+
+.calculator {
+  width: 40%;
+  padding: 2rem;
+  border-right: 2px solid $color-additional;
+  transition: all 1s;
+
+  @include mobile {
+    width: 90%;
+    border-right: none;
+  }
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  padding: 1rem;
+
+  background-color: $color-additional;
+}
+
+.option-header {
+  margin: 0 0 1.5rem 0;
+
+  color: $text-color;
+}
+
+.calculate-wrapper {
+  display: flex;
+}
+
+.error-message {
+  font-size: 1.2rem;
+}
+
+.result {
+  width: 100%;
+}
